@@ -1,0 +1,115 @@
+/* https://external-content.duckduckgo.com/iu/?u=htpps%3A%2F%2Fil.wp.com%2Ftecheasts.com%2Fwp-content%2Fuploads%2016%2Fmountain_nature_elegant_wallpaper_3f.jpg&f=1&nofb=1 */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html , body{
+    font-family: "lato" , sans-serif;
+
+}
+.row1{
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+.global{
+    padding: 50px;
+    color: #f0f9ff;
+    margin-top: 80px;
+    /* background:url(image/sli.jpg); */
+    background: linear-gradient(to right , #00093c) , #2d0b00;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+.global  .curve{
+    position: absolute;
+    top: 17%;
+    background: #000;
+    opacity: 0.2;
+    width: 90%;
+    height: 38%;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.global  h6{
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.global ul{
+    list-style-type: none;
+    line-height: 30px;
+    font-size: 15px;
+    margin-bottom: 0;
+
+}
+.global  ul a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+
+}
+.global ul a:hover{
+    opacity: 0.8;
+    color: #eee;
+}
+.global .socail{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 0px;
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+}
+.global .socail a{
+    font-size: 22px;
+    width: 45px;
+    height: 45px;
+    line-height: 39px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #05ff05;
+    box-shadow: 0px 0px 0px 1px rgba(255, 255,255,0.4);
+    margin: 10px;
+    color: #fff;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+.global .socail a:hover{
+    opacity: 0.9;
+    box-shadow: 0px 1px 3px 2px rgba(255, 255, 255 , 0.9);
+}
+.global .copyright{
+    text-align: center;
+    padding: 24px;
+    font-weight: 500;
+    opacity: 0.8;
+    font-size: 16px;
+}
+@media(max-width:767px){
+    .global  .curve{
+        left: 5%;
+        height: 70%;
+    }
+    .global h6{
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    .global ul{
+        text-align: center;
+
+    }
+    .socail{
+        margin:  0 auto;
+    }
+}

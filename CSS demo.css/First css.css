@@ -1,0 +1,20 @@
+h1{
+    color: darkorange;
+}
+li{
+    list-style-type:none;
+}li.special{
+    color: rgb(109, 109, 177);
+    font-weight: 800;
+}
+h2 em {
+    color: chocolate;
+    font-weight: bolder;
+}
+h1+p{
+    font-weight: 200%;
+}
+a:hover{
+     color: darkgreen;
+     text-decoration-style: ;
+}

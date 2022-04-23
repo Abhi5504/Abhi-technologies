@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+<link rel="stylesheet" href="1st project.css">
+</head>
+<body>
+
+<header>
+    <div class="navbar container">
+        <div class="logo"><h1>Xcent</h1></div>
+        <ul class="nav-list">
+            <li><a href="class.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="#our gallery">GALLERY</a></li>
+            <li><a href="form.html">APPLY</a></li>
+            <li><a href="tel:6207486864">CONTACT</a></li>
+            
+        </ul>
+    </div>
+</header>
+
+<section>
+    <div class="hero">
+
+        <form >
+            
+    <div class="regform">
+        <h1>Registration Form</h1>
+    </div>
+    
+            <div class="row">
+            <div class="input-group">
+                <input type="text" id="name" required>
+                <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="number"  maxlength="10" required>
+                <label for="number"><i class="fa-solid fa-mobile-retro"></i> Phone No.</label>
+            </div>
+        </div>
+            <div class="input-group">
+                <input type="email" id="email" value="@gmail.com" required>
+                <label for="email"><i class="fa-solid fa-envelope"></i> Email I'd</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="number" required>
+                <label for="number"><i class="fa-solid fa-location-pin"></i>Pincode</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="country" name="country" value="India" readonly>
+                <label for="country">Country</label>
+            </div>
+            <div class="input-group">
+                <textarea id="message" rows="7" required></textarea>
+                <label for="message"><i class="fa-solid fa-message"></i>Your Message</label>
+            </div>
+            <div class="input-group">
+                <textarea id="address" rows="4" required></textarea>
+                <label for="address"><i class="fa-solid fa-address-card"></i> Your Address</label>
+            </div>
+            <button type="submit"><i class="fas fa-paper-plane"></i>SUBMIT</button>
+        </form>
+    
+    </div>
+</section>
+
+<footer>
+    <div class="row2">
+        <div class="col2">
+            <img src="image/images-removebg-preview.png" width="100px" class="logo">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, debitis!</p>
+        </div>
+        <div class="col2">
+            <h3>Office</h3>
+            <p>23-B, 2nd Floor, Sector C, Indrapuri, Bhopal, Madhya Pradesh 462022</p>
+            <p class="email-id">xyz@gl.com</p>
+            <h4>+91-0123456789</h4>
+        </div>
+        <div class="col2"></div>
+        <div class="col2"></div>
+        <div class="col2"></div>
+    </div>
+</footer>
+
+</body>
+</html>
+

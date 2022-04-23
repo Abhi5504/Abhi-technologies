@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="class.css">
+</head>
+<body>
+   <fieldset>
+    <img src="image/a logo.jpg" alt="" width="150" height="140">
+   <marquee behavior="Abhi_TECH" direction="vertical"> <h3>Abhi-tech has clients in more than 15 countries spread across US, Europe and India.</h3> </marquee>
+    <form action="">
+        <h1>Apply Payment From</h1>
+        <h2>Contact Information</h2>
+        <p>Name: *<input type="name" name="name" id="name" placeholder="name" required></p>
+        <fieldset>
+            <legend>Gender *</legend>
+            <p>Male <input type="radio" name="gender" id="gender" required> Female <input type="radio" name="gender" id="gender" required>
+            </p>
+        </fieldset>
+        <p>Address: <textarea name="address" id="address" cols="50" rows="5" placeholder="address"></textarea></p>
+        <p>Phone no.: * <input type="number" name="number" id="number" max="9999999999" maxlength="10" placeholder="number" required></p>
+        <p>Email: *<input type="email" name="email" id="email" placeholder="email" required></p>
+        <p>Pincode:*<input type="number" name="pincode" id="pincode" placeholder="pincode" required></p>
+        <hr>
+        <h2>Payment Information</h2>
+        <p>Card Type:*
+            <select name="card type" id="card type" required>
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="mastercard">Mastercard</option>
+            </select>
+        </p>
+        <p>
+            Card Number <input type="number" name="card_number" id="card_number" placeholder="card number" required>
+        </p>
+        <p>Expiration Date:* <input type="date" name="exp_date" id="exp_date" placeholder="exp_date" required></p>
+        <p>
+            CVV: *<input type="password" name="cvv" id="cvv" max="999" maxlength="3" placeholder="cvv no." required>
+        </p>
+        <input type="submit" value="Pay Now">
+        <input type="reset" value="Reset">
+      
+        <footer><h3>Good Day  &#x1F609</h3></footer>
+    </form>
+</fieldset>
+    <a href="class.html">Back to Home page </a>
+</body>
+</html>
